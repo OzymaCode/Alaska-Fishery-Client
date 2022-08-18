@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import PayPal from '../comps/PayPal.js'
 
-const cart = () => {
+const Cart = () => {
   const dispatch = useDispatch()
   const items = useSelector((state) => state.cart.items)
   const total = useSelector((state) => state.cart.total)
@@ -61,7 +61,7 @@ const cart = () => {
                             animate={{ opacity: 1 }}
                             whileHover={{ scale: 1.1 }}
                             layoutId={item.product.id}
-                            src={`../${item.product.image}`}
+                            src={'../' + item.product.image}
                             className="object-contain"
                           />
                         </Paper>
@@ -176,4 +176,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(cart)
+export default connect(mapStateToProps)(Cart)

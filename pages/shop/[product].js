@@ -25,7 +25,7 @@ export async function getServerSideProps(context) {
   }
 }
 
-const productDisplay = (product) => {
+const ProductDisplay = (product) => {
   const dispatch = useDispatch()
   const cartItems = useSelector((state) => state.cart.items)
   const [inputkg, setIntputkg] = useState()
@@ -137,4 +137,4 @@ const productDisplay = (product) => {
   )
 }
 
-export default productDisplay
+export default ProductDisplay

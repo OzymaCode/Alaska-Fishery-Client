@@ -20,7 +20,7 @@ export const getStaticProps = async (context) => {
   }
 }
 
-const shop = ({ products, cookiesChanged }) => {
+const Shop = ({ products, cookiesChanged }) => {
   const [sidebarActive, setSidebarActive] = useState(false)
   const gridActive = useSelector((state) => state.settings.shopGrid)
 
@@ -85,4 +85,4 @@ const shop = ({ products, cookiesChanged }) => {
   )
 }
 
-export default shop
+export default Shop

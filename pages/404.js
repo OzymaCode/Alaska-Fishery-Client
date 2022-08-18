@@ -22,7 +22,7 @@ const DoesNotExist = () => {
         <title>Alaskan Fishery | 404</title>
         <link rel="icon" href="/fish-icon.webp" />
       </Head>
-      <h1>This Page Doesn't Exist. Sorry.</h1>
+      <h1>This Page Doesn&apos;t Exist. Sorry.</h1>
     </motion.div>
   )
 }
